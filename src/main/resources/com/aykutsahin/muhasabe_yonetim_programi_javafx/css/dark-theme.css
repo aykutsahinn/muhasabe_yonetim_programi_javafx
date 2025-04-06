@@ -1,0 +1,141 @@
+/* Genel arka plan ve metin renkleri */
+.root {
+    -fx-base: #121212;
+    -fx-background: #181818;
+    -fx-text-fill: #e0e0e0;
+}
+
+/* Başlıklar ve etiketler */
+.label {
+    -fx-text-fill: #e0e0e0;
+}
+
+/* Header paneli */
+.top {
+    -fx-background-color: #1f1f1f;
+}
+
+/* HBox ve VBox'lar */
+.hbox, .vbox {
+    -fx-background-color: #242424;
+}
+
+/* Hızlı Erişim Butonları */
+.button, .menu-button {
+    -fx-background-color: #3e3e3e;
+    -fx-text-fill: #ffffff;
+    -fx-background-radius: 12;
+}
+
+.button:hover, .menu-button:hover {
+    -fx-background-color: #4a4a4a;
+}
+
+/* Menü çubuğu */
+.menubar {
+    -fx-background-color: #2c2c2c;
+    -fx-border-color: #444444;
+}
+
+/* Menü ve menü öğeleri */
+.menu {
+    -fx-text-fill: #e0e0e0;
+}
+
+.menu-item {
+    -fx-text-fill: #e0e0e0;
+    -fx-background-color: transparent;
+}
+
+.menu-item:hover {
+    -fx-background-color: #333333;
+}
+
+/* Menü butonları */
+.menu-button {
+    -fx-background-color: #333333;
+    -fx-text-fill: #ffffff;
+}
+
+.menu-button:hover {
+    -fx-background-color: #444444;
+}
+
+/* Form bileşenleri (TextField, ComboBox vb.) */
+.text-field, .combo-box, .table-view {
+    -fx-background-color: #2e2e2e;
+    -fx-border-color: #444444;
+    -fx-text-fill: #e0e0e0;
+    -fx-prompt-text-fill: #a1a1a1;
+}
+
+.text-field:focused, .combo-box:focused, .table-view:focused {
+    -fx-border-color: #6c5ce7;
+}
+
+/* Button renkleri */
+.button {
+    -fx-background-color: #2ecc71;
+    -fx-text-fill: white;
+}
+
+.button-pressed {
+    -fx-background-color: #27ae60;
+}
+
+.button:focused {
+    -fx-background-color: #2ecc71;
+}
+
+.button-default {
+    -fx-background-color: #3498db;
+}
+
+.button-danger {
+    -fx-background-color: #e74c3c;
+}
+
+/* Tablo arka plan renkleri */
+.table-view {
+    -fx-background-color: #2e2e2e;
+    -fx-border-color: #444444;
+}
+
+.table-column {
+    -fx-text-fill: #e0e0e0;
+}
+
+/* Footer */
+.bottom {
+    -fx-background-color: #1f1f1f;
+    -fx-border-color: #444444;
+}
+
+.footer-label {
+    -fx-text-fill: #7f8c8d;
+}
+
+/* SplitPane panel arka planı */
+.split-pane {
+    -fx-background-color: #181818;
+}
+
+/* Sidebar paneli */
+.vbox {
+    -fx-background-color: #2c2c2c;
+}
+
+/* BorderPane */
+.border-pane {
+    -fx-background-color: #181818;
+}
+
+/* TableView elemanları (id, username vb.) */
+.table-column {
+    -fx-text-fill: #e0e0e0;
+}
+
+
+
+
+

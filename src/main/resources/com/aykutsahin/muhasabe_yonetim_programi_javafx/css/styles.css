@@ -1,0 +1,13 @@
+/* styles.css */
+.modal {
+    -fx-background-color: rgba(0, 0, 0, 0.6);
+    -fx-padding: 20;
+    -fx-alignment: center;
+    -fx-border-radius: 8;
+}
+
+/* Diğer stil tanımlamaları */
+.button {
+    -fx-background-radius: 8;
+    -fx-text-fill: white;
+}
