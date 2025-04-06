@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.aykutsahin.muhasabe_yonetim_programi_javafx.controller.ProfileController"
+            prefWidth="400" prefHeight="400">
+
+    <VBox alignment="CENTER" spacing="15"
+          AnchorPane.topAnchor="20.0" AnchorPane.bottomAnchor="20.0"
+          AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+
+        <Label text="👤 Kullanıcı Profili"
+               style="-fx-font-size: 18px; -fx-font-weight: bold;" />
+
+        <HBox spacing="10">
+            <Label text="Kullanıcı Adı:" />
+            <Label fx:id="username" text="..." />
+        </HBox>
+
+        <HBox spacing="10">
+            <Label text="E-posta:" />
+            <Label fx:id="email" text="..." />
+        </HBox>
+
+        <HBox spacing="10">
+            <Label text="Rol:" />
+            <Label fx:id="role" text="..." />
+        </HBox>
+
+        <PasswordField fx:id="oldPasswordField" promptText="Eski Şifre" />
+        <PasswordField fx:id="newPasswordField" promptText="Yeni Şifre" />
+        <PasswordField fx:id="confirmPasswordField" promptText="Yeni Şifre (Tekrar)" />
+
+        <HBox spacing="10">
+            <Button text="Şifreyi Değiştir"
+                    onAction="#changePassword"
+                    style="-fx-background-color: #27ae60; -fx-text-fill: white; -fx-font-weight: bold;" />
+
+            <Button text="Kapat"
+                    onAction="#closeWindow"
+                    style="-fx-background-color: #e74c3c; -fx-text-fill: white;" />
+        </HBox>
+
+    </VBox>
+</AnchorPane>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane
+        xmlns:fx="http://javafx.com/fxml"
+        fx:controller="com.aykutsahin.muhasabe_yonetim_programi_javafx.controller.LoginController"
+        alignment="center" hgap="15" vgap="15"
+        style="-fx-background-color: #f4f6f8; -fx-padding: 40px; -fx-alignment: center; -fx-pref-width: 450px; -fx-border-radius: 10; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 10, 0.0, 0, 5);">
+
+    <!-- Başlık: Kullanıcı Girişi, Ortalanmış -->
+    <Label text="GİRİŞ EKRANI" GridPane.rowIndex="0" GridPane.columnIndex="0"
+           GridPane.columnSpan="2"
+           style="-fx-font-size: 35px; -fx-font-weight: bold; -fx-text-fill: #2c3e50; -fx-alignment: center; -fx-padding: 0 0 20px 0;"
+           GridPane.halignment="CENTER" GridPane.valignment="CENTER"/>
+
+    <!-- Kullanıcı Adı -->
+    <Label text="Kullanıcı Adı:" GridPane.rowIndex="1" GridPane.columnIndex="0"
+           style="-fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: #333;"/>
+    <TextField fx:id="usernameField" promptText="Kullanıcı adı veya email girin"
+               GridPane.rowIndex="1" GridPane.columnIndex="1"
+               style="-fx-background-color: #fff; -fx-border-radius: 5; -fx-padding: 10px; -fx-pref-width: 250px; -fx-border-color: #ddd; -fx-font-size: 14px; -fx-focus-color: #3498db;" />
+
+    <!-- Şifre -->
+    <Label text="Şifre:" GridPane.rowIndex="2" GridPane.columnIndex="0"
+           style="-fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: #333;"/>
+    <PasswordField fx:id="passwordField" promptText="Şifrenizi girin"
+                   GridPane.rowIndex="2" GridPane.columnIndex="1"
+                   style="-fx-background-color: #fff; -fx-border-radius: 5; -fx-padding: 10px; -fx-pref-width: 250px; -fx-border-color: #ddd; -fx-font-size: 14px; -fx-focus-color: #3498db;" />
+
+    <!-- Giriş Yap Butonu (Mavi) -->
+    <Button text="Giriş Yap" onAction="#login"
+            GridPane.rowIndex="3" GridPane.columnIndex="1"
+            style="-fx-background-color: #2a9df4; -fx-text-fill: white; -fx-font-size: 14px; -fx-border-radius: 5; -fx-padding: 12px 20px; -fx-pref-width: 250px; -fx-font-weight: bold; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 5, 0.0, 0, 5);" />
+
+    <!-- Kayıt Ol Butonu (Yeşil) -->
+    <Button text="Kayıt Yap" onAction="#switchToRegister"
+            GridPane.rowIndex="4" GridPane.columnIndex="1"
+            style="-fx-background-color: #2ecc71; -fx-text-fill: white; -fx-font-size: 14px; -fx-border-radius: 5; -fx-padding: 12px 20px; -fx-pref-width: 250px; -fx-font-weight: bold; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 5, 0.0, 0, 5);" />
+
+</GridPane>

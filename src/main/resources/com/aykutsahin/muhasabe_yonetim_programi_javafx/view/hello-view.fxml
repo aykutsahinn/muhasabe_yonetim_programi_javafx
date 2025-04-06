@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.aykutsahin.muhasabe_yonetim_programi_javafx.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+
+    <Label fx:id="welcomeText"/>
+
+    <!-- <Button text="Hello!" onAction="#onHelloButtonClick"/>simdilik yoruma çektim-->
+
+    <!-- Bu label dil destekli olarak değişecek -->
+    <Label fx:id="greetingLabel"/>
+
+    <!-- Bu buton da dil destekli olacak -->
+    <Button fx:id="exitButton"/>
+
+    <!-- Dil seçimi için ComboBox -->
+    <ComboBox fx:id="languageComboBox" onAction="#onLanguageChange"/>
+</VBox>
+
+
