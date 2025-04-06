@@ -414,8 +414,8 @@ public class AdminController implements Initializable {
 
         Optional<String> result = dialog.showAndWait();
         result.ifPresent(receiver -> {
-            String senderEmail = "sahinaykut88@gmail.com"; // değiştir
-            String senderPassword = "lrin vnco txgy znne"; // değiştir
+            String senderEmail = "kendi mail adresinizi giriniz"; // değiştir
+            String senderPassword = "uygulama şifrenizi giriniz"; // değiştir
             String host = "smtp.gmail.com";
             int port = 587;
 
